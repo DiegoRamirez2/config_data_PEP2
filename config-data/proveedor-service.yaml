@@ -9,3 +9,8 @@ eureka:
   instance:
     instance-id:  ${spring.application.name}:${spring.application.instance_id:8082}
     hostname: proveedor-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

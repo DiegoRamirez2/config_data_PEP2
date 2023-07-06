@@ -9,3 +9,8 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:8083}
     hostname: acopio-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
