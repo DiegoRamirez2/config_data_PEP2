@@ -1,0 +1,15 @@
+server:
+  port: 8084
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:8084}
+    hostname: salida-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

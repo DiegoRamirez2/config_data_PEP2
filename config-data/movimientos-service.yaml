@@ -1,0 +1,15 @@
+server:
+  port: 8085
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:8085}
+    hostname: movimientos-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
